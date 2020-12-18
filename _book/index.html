@@ -1,0 +1,351 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>开发笔记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bottle/bottle.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    开发笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="bottle/bottle.html">
+            
+                <a href="bottle/bottle.html">
+            
+                    
+                    原项目解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="fastapi/fastapi.html">
+            
+                <a href="fastapi/fastapi.html">
+            
+                    
+                    FastApi重写规划
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="fastapi/routers/">
+            
+                <a href="fastapi/routers/">
+            
+                    
+                    从路由开始解析程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="fastapi/routers/home.html">
+            
+                <a href="fastapi/routers/home.html">
+            
+                    
+                    index页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="fastapi/routers/stop.html">
+            
+                <a href="fastapi/routers/stop.html">
+            
+                    
+                    stop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="fastapi/routers/run_start.html">
+            
+                <a href="fastapi/routers/run_start.html">
+            
+                    
+                    run_start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="fastapi/routers/webhook.html">
+            
+                <a href="fastapi/routers/webhook.html">
+            
+                    
+                    webhook
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="END.html">
+            
+                <a href="END.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >开发笔记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5F00;&#x53D1;&#x7B14;&#x8BB0;">&#x5F00;&#x53D1;&#x7B14;&#x8BB0;</h1>
+<p>&#x672C;&#x7B14;&#x8BB0;&#x4EE5;<a href="https://github.com/GitbookIO/gitbook-cli" target="_blank">gitbook-cli</a>&#x7684;&#x5F62;&#x5F0F;&#x90E8;&#x7F72;&#xFF0C;&#x5DE6;&#x4E0A;&#x89D2;&#x7684;<strong>&#x5927;&#x5199;A</strong>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6587;&#x5B57;&#x5927;&#x5C0F;&#x548C;&#x4E3B;&#x9898;&#xFF0C;&#x6C49;&#x5821;&#x83DC;&#x5355;&#x56FE;&#x6807;&#x53EF;&#x4EE5;&#x5173;&#x95ED;&#x76EE;&#x5F55;&#x3002;  </p>
+<p>&#x5176;&#x5B9E;&#x4E5F;&#x4E0D;&#x7B97;&#x662F;&#x5F00;&#x53D1;&#x7B14;&#x8BB0;&#xFF0C;&#x8FD9;&#x662F;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x5199;&#x7684;&#x5F00;&#x53D1;&#x7B14;&#x8BB0;&#xFF0C;&#x6587;&#x98CE;&#x4E0D;&#x597D;&#x656C;&#x8BF7;&#x89C1;&#x8C05;&#x3002;<br>&#x6211;&#x5E73;&#x65F6;&#x5199;&#x4EE3;&#x7801;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x7B14;&#x8BB0;&#x7684;&#xFF0C;&#x90FD;&#x662F;&#x76F4;&#x63A5;&#x6839;&#x636E;&#x9879;&#x76EE;&#x8FDB;&#x884C;&#x529F;&#x80FD;&#x5212;&#x5206;&#xFF0C;SOC&#xFF08;Separation of concerns &#x5173;&#x6CE8;&#x70B9;&#x5206;&#x79BB;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x5165;Flow&#xFF08;&#x5FC3;&#x6D41;&#xFF09;&#x72B6;&#x6001;&#xFF0C;&#x4E8B;&#x540E;&#x518D;&#x5728;&#x5173;&#x952E;&#x90E8;&#x5206;&#x5199;&#x4E0A;&#x6CE8;&#x91CA;&#x3002;<br>&#x56E0;&#x4E3A;&#x6211;&#x53EA;&#x4F1A;&#x5199;&#x5F00;&#x53D1;&#x6559;&#x7A0B;&#x3002;  </p>
+<ul>
+<li><a href="http://spider-book.wongyusing.com/section_0/chapter_0.html" target="_blank">&#x4EC0;&#x4E48;&#x662F;&#x722C;&#x866B;&#xFF1F;</a> &#x7B2C;&#x4E00;&#x6B21;&#x5199;&#x6559;&#x7A0B;&#xFF0C;&#x6587;&#x7B14;&#x4E0D;&#x597D;&#xFF0C;&#x89C1;&#x7B11;&#x4E86;&#x3002;</li>
+<li><a href="http://wongyusing.com/series/web-blog" target="_blank">&#x5982;&#x4F55;&#x6210;&#x4E3A;Python&#x5168;&#x7AEF;&#x5DE5;&#x7A0B;&#x5E08;&#x6307;&#x5317;</a> &#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x662F;&#x7B2C;&#x4E94;&#x7248;&#x6765;&#x7684;&#xFF0C;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x5199;&#x7684;&#x4E0D;&#x597D;&#x5C31;&#x91CD;&#x5199;&#x4E86;&#x3002;  </li>
+</ul>
+<p>&#x5982;&#x679C;&#x89C9;&#x5F97;&#x6211;&#x7684;&#x5F00;&#x53D1;&#x7B14;&#x8BB0;&#x5199;&#x7684;&#x4E0D;&#x597D;&#xFF0C;&#x6073;&#x8BF7;&#x7ED9;&#x4E00;&#x4EFD;&#x6A21;&#x7248;&#x6211;&#x53C2;&#x8003;&#x4E00;&#x4E0B;&#x3002;<br>&#x56E0;&#x4E3A;&#x6211;&#x771F;&#x7684;&#x6CA1;&#x6709;&#x63A5;&#x89E6;&#x8FC7;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="bottle/bottle.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 原项目解析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"开发笔记","level":"1.1","depth":1,"next":{"title":"原项目解析","level":"1.2","depth":1,"path":"bottle/bottle.md","ref":"bottle/bottle.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-12-18T07:39:43.246Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-18T07:34:40.858Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
